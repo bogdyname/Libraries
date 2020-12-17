@@ -24,9 +24,7 @@ int isEmpty(struct Stack *stack)
 void push(struct Stack *stack, int item)
 {
 	if(isFull(stack))
-	{
 		return;
-	}
 
 	stack->data[++stack->topElement] = item;
 }
@@ -40,10 +38,7 @@ int pop(struct Stack *stack)
 int peek(struct Stack *stack)
 {
 	if(isEmpty(stack))
-	{
 		return INT_MIN;
-	}
-	else
 
 	return stack->data[stack->topElement];
 }
