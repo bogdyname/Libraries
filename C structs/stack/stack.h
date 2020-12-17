@@ -13,6 +13,8 @@ struct Stack
 	//now it's test with int
 };
 
+
+struct Stack *createStack(unsigned capacity);
 int pop(struct Stack *stack);
 int peek(struct Stack *stack);
 int isFull(struct Stack *stack);

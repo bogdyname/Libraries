@@ -2,7 +2,7 @@
 
 struct Stack *createStack(unsigned capacity)
 {
-	struct Stack *stack = (struct Stack *)malloc(sizeof(struct Stack));
+	struct Stack *stack = (struct Stack*)malloc(sizeof(struct Stack));
 	stack->capacity = capacity;
 	stack->topElement = -1;
 	stack->data = (int*)malloc(stack->capacity * sizeof(int));
@@ -27,10 +27,6 @@ void push(struct Stack *stack, int item)
 	{
 		return;
 	}
-	else
-	{
-		/*clear code*/
-	}
 
 	stack->data[++stack->topElement] = item;
 }
@@ -48,9 +44,6 @@ int peek(struct Stack *stack)
 		return INT_MIN;
 	}
 	else
-	{
-		/*clear code*/
-	}
 
 	return stack->data[stack->topElement];
 }
