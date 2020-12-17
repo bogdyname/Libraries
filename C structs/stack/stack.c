@@ -2,7 +2,7 @@
 
 struct Stack *createStack(unsigned capacity)
 {
-	struct Stack *stack = (struct Stack *)malloc(sizeof(struct Stack));
+	struct Stack *stack = (struct Stack*)malloc(sizeof(struct Stack));
 	stack->capacity = capacity;
 	stack->topElement = -1;
 	stack->data = (int*)malloc(stack->capacity * sizeof(int));
