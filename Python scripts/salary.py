@@ -8,6 +8,7 @@ if __name__ == "__main__":
         filename = sys.argv[1]
     else:
         print('Error: add path to filename!')
+        quit()
 
     with open(filename, encoding='utf-8') as f:
         lines = f.readlines()
