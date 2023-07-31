@@ -4,11 +4,11 @@ def compound_interest(years=9, percent=10, start_capital=500000, capital_increas
     result=0
     for year in range(years):
         result = start_capital+(start_capital*(percent/100))
-        print('Sum for', year, 'year wihtout increase:', "{:,.2f}".format(result))
+        print('Sum for', year+1, 'year wihtout increase:', "{:,.2f}".format(result))
         
         result += capital_increase
         start_capital = result
-        print('Sum for', year, 'year with increase:', "{:,.2f}".format(result))
+        print('Sum for', year+1, 'year with increase:', "{:,.2f}".format(result), '\n')
 
 if __name__ == "__main__":
     
